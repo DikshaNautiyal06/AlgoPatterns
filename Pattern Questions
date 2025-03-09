@@ -1,0 +1,551 @@
+--PATTERN QUESTIONS--
+
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main() {
+    int n;
+
+    // Pattern 1: Square Star Pattern
+    cout << "Enter size for square pattern: ";
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n; j++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    cout << endl;
+
+    /*
+        Output for n = 4:
+        ****
+        ****
+        ****
+        ****
+    */
+
+    // Pattern 2: Number Square Pattern
+    cout << "Enter size for number pattern: ";
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n; j++) {
+            cout << i;
+        }
+        cout << endl;
+    }
+    cout << endl;
+
+    /*
+        Output for n = 4:
+        1111
+        2222
+        3333
+        4444
+    */
+
+    // Pattern 3: Right-Aligned Triangle
+    cout << "Right-aligned triangle pattern:\n";
+    n = 5;
+    for (int i = 1; i <= n; i++) {
+        for (int j = n - 1; j >= i; j--) {
+            cout << " ";
+        }
+        for (int k = 1; k <= i; k++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    /*
+        Output:
+            *
+           **
+          ***
+         ****
+        *****
+    */
+
+    // Pattern 4: Right-Aligned Pyramid
+    cout << "Right-aligned pyramid pattern:\n";
+    n = 5;
+    for (int i = 1; i <= n; i++) {
+        for (int j = n - 1; j >= i; j--) {
+            cout << " ";
+        }
+        for (int k = 1; k <= i; k++) {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+
+    /*
+        Output:
+            *
+           * *
+          * * *
+         * * * *
+        * * * * *
+    */
+
+    // Pattern 5: Number Right-Aligned Triangle
+    cout << "Number right-aligned triangle pattern:\n";
+    n = 5;
+    for (int i = 1; i <= n; i++) {
+        for (int j = n - 1; j >= i; j--) {
+            cout << " ";
+        }
+        for (int k = 1; k <= i; k++) {
+            cout << i;
+        }
+        cout << endl;
+    }
+
+    /*
+        Output:
+            1
+           22
+          333
+         4444
+        55555
+    */
+
+    // Pattern 6: Number Pyramid
+    cout << "Number pyramid pattern:\n";
+    n = 5;
+    for (int i = 1; i <= n; i++) {
+        for (int j = n - 1; j >= i; j--) {
+            cout << " ";
+        }
+        for (int k = 1; k <= i; k++) {
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+
+    /*
+        Output:
+            1
+           2 2
+          3 3 3
+         4 4 4 4
+        5 5 5 5 5
+    */
+
+    // Pattern 7: Incremental Number Pyramid
+    cout << "Incremental number pyramid pattern:\n";
+    n = 5;
+    for (int i = 1; i <= n; i++) {
+        for (int j = n - 1; j >= i; j--) {
+            cout << " ";
+        }
+        for (int k = 1; k <= i; k++) {
+            cout << k << " ";
+        }
+        cout << endl;
+    }
+
+    /*
+        Output:
+            1
+           1 2
+          1 2 3
+         1 2 3 4
+        1 2 3 4 5
+    */
+
+    // Pattern 8: Alphabet Pyramid
+    cout << "Alphabet pyramid pattern:\n";
+    char limit = 'E';
+    for (char i = 'A'; i <= limit; i++) {
+        for (int j = limit - 1; j >= i; j--) {
+            cout << " ";
+        }
+        for (char k = 'A'; k <= i; k++) {
+            cout << k << " ";
+        }
+        cout << endl;
+    }
+
+    /*
+        Output:
+            A
+           A B
+          A B C
+         A B C D
+        A B C D E
+    */
+
+    // Pattern 9: Alphabet Right-Aligned Triangle
+    cout << "Alphabet right-aligned triangle pattern:\n";
+    limit = 'E';
+    for (char i = 'A'; i <= limit; i++) {
+        for (int j = limit - 1; j >= i; j--) {
+            cout << " ";
+        }
+        for (char k = 'A'; k <= i; k++) {
+            cout << i;
+        }
+        cout << endl;
+    }
+
+    /*
+        Output:
+            A
+           BB
+          CCC
+         DDDD
+        EEEEE
+    */
+
+    // Pattern 10: Reverse Alphabet Triangle
+    cout << "Reverse Alphabet triangle pattern:\n";
+    n = 5;
+    for (int i = 1; i <= n; i++) {
+        char start = 'A' + n - i;
+        for (int j = 1; j <= i; j++) {
+            cout << start;
+            start++;
+        }
+        cout << endl;
+    }
+
+    /*
+        Output:
+        E
+        DE
+        CDE
+        BCDE
+        ABCDE
+    */
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   
+   int n;
+   cin>>n;
+   int i=1;
+   while(i<=n){
+       int j=1;
+       while(j<=n){
+           cout<<"*";
+           j=j+1;
+       }
+       cout<<endl;
+       i=i+1;
+       
+   }
+    return 0;
+}
+
+output:
+****
+****
+****
+****
+
+
+
+###########include <iostream>
+using namespace std;
+
+int main()
+{
+   
+   int n;
+   cin>>n;
+   int i=1;
+   while(i<=n){
+       int j=1;
+       while(j<=n){
+           cout<<i;
+           j=j+1;
+       }
+       cout<<endl;
+       i=i+1;
+       
+   }
+    return 0;
+}
+output:
+1111
+2222
+3333
+4444
+
+
+
+
+#######include <iostream>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{ int n=5;
+    for (int i=1;i<=n;i++){
+        for(int j=n-1;j>=i;j--){
+            printf(" ");
+        }
+            
+            for ( int k =1;k<=i;k++){
+                printf("*");
+                
+            }
+            printf("\n");
+        
+        
+    }
+    return 0;
+}
+output:     *
+           **
+          ***
+         ****
+        *****
+
+
+
+#####include <iostream>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{ int n=5;
+    for (int i=1;i<=n;i++){
+        for(int j=n-1;j>=i;j--){
+            printf(" ");
+        }
+            
+            for ( int k =1;k<=i;k++){
+                printf("* ");
+                
+            }
+            printf("\n");
+        
+        
+    }
+    return 0;
+}
+
+output:  *
+        * *
+      *  *  *
+     *  * * * *
+    *  * * * *  *
+
+
+
+
+###include <iostream>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{ int n =5; 
+ for (int i=1; i<=n;i++){
+     for ( int j=n-1;j>=i;j--){
+         printf(" ");
+     }
+     for( int  k=1;k<=i;k++){
+         printf("%d",i);
+     }
+     printf("\n");
+ }
+ return 0;
+}
+output: 1
+       22
+      333
+     4444
+    55555
+
+
+
+####include <iostream>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{ int n =5; 
+ for (int i=1; i<=n;i++){
+     for ( int j=n-1;j>=i;j--){
+         printf(" ");
+     }
+     for( int  k=1;k<=i;k++){
+         printf("%d ",i);
+     }
+     printf("\n");
+ }
+ return 0;
+}
+output: 1
+       2 2
+      3 3 3
+    4  4  4 4
+  5 5 5 5  5  5
+
+
+
+#include <iostream>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{ int n =5; 
+ for (int i=1; i<=n;i++){
+     for ( int j=n-1;j>=i;j--){
+         printf(" ");
+     }
+     for( int  k=1;k<=i;k++){
+         printf("%d ",k);
+     }
+     printf("\n");
+ }
+ return 0;
+}
+output:  1
+        1 2
+       1 2 3
+      1 2 3 4
+     1 2 3 4 5
+
+
+
+####include <iostream>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{ int n =5; 
+ for (int i=1; i<=n;i++){
+     for ( int j=n-1;j>=i;j--){
+         printf(" ");
+     }
+     for( int  k=1;k<=i;k++){
+         printf("%d",k);
+     }
+     printf("\n");
+ }
+ return 0;
+}
+output:
+     1
+    12
+   123
+  1234
+ 12345
+ 
+
+######include <iostream>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{ int n ='E'; 
+ for (char i='A'; i<=n;i++){
+     for ( int j=n-1;j>=i;j--){
+         printf(" ");
+     }
+     for( char  k='A';k<=i;k++){
+         printf("%c ",k);
+     }
+     printf("\n");
+ }
+ return 0;
+}
+
+
+
+output: A
+       A B
+      A B C
+     A B C D
+    A B C D E
+
+
+
+
+#include <iostream>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{ int n ='E'; 
+ for (char i='A'; i<=n;i++){
+     for ( int j=n-1;j>=i;j--){
+         printf(" ");
+     }
+     for( char  k='A';k<=i;k++){
+         printf("%c",k);
+     }
+     printf("\n");
+ }
+ return 0;
+}
+out[ut:
+      A
+     AB
+    ABC
+   ABCD
+  ABCDE
+
+
+
+
+#####include <iostream>
+#include<stdio.h>
+using namespace std;
+
+int main()
+{ int n ='E'; 
+ for (char i='A'; i<=n;i++){
+     for ( int j=n-1;j>=i;j--){
+         printf(" ");
+     }
+     for( char  k='A';k<=i;k++){
+         printf("%c",i);
+     }
+     printf("\n");
+ }
+ return 0;
+}
+output:A
+      BB
+     CCC
+    DDDD
+   EEEEE
+
+
+#####include <stdio.h>
+
+int main()
+
+{ int n=5;
+for( int i=1; i<=n;i++){
+    char start='A'+n-i;
+    for(int j=1;j<=i;j++){
+       
+        printf("%c",start);
+        start++;
+        
+    }
+    printf("\n");
+}
+
+    return 0;
+}
+output:
+E
+DE
+CDE
+BCDE
+ABCDE
